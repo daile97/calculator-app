@@ -1,0 +1,3 @@
+.prettierignore
+.git
+node_modules

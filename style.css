@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+*, *::after, *::before {
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  background-color: hsl(222, 26%, 31%);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#calculator {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 80%;
+  max-height: 80vh;
+}
+
+#head {
+  padding-left: 5%;
+  font-size: 3rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  height: 20%;
+}
+
+#screen {
+  height: 25%;
+  background-color: hsl(224, 36%, 15%);
+  border-radius: 10px;
+}
+
+#key-board {
+  margin-top: 5%;
+  padding: 5%;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 5%;
+  grid-column-gap: 3%;
+  flex: 100%;
+  background-color: hsl(223, 31%, 20%);
+}
+
+button {
+  border-radius: 10px;
+  border: none;
+  background-color: hsl(30, 25%, 89%);
+  color: hsl(223, 31%, 20%);
+  font-size: 2rem;
+  box-shadow: 0px 5px 0px hsl(28, 16%, 65%);
+  vertical-align: middle;
+}
+
+button:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(99%, 95%);
+}
+
+.func {
+  background-color: hsl(225, 21%, 49%);
+  color: white;
+  box-shadow: 0px 5px 0px hsl(224, 28%, 35%);
+}
+
+.func:hover {
+  background-color: hsl(225, 21%, 59%);
+}
+
+.equal {
+  background-color: hsl(6, 63%, 50%);
+  box-shadow: 0px 5px 0px hsl(6, 70%, 34%);
+  color: white;
+}
+
+.equal:hover {
+  background-color: hsl(6, 63%, 60%);
+}
+
+.span {
+  grid-column: span 2;
+}
+
+@media (max-width: 1200px) {
+  #calculator {
+    width: 50%;
+  }
+}
+
+@media (max-width: 992px) {
+  #calculator {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  #calculator {
+    width: 70%;
+  }
+}
+
+@media (max-width: 576px) {
+  #calculator {
+    width: 90%;
+  }
+  #screen, #key-board, button {
+    border-radius: 5px;
+  }
+}
