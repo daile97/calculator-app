@@ -35,4 +35,4 @@ document.querySelector("#app").innerHTML = `
   </div>
 `;
 
-main()
+main();
