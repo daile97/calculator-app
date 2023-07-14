@@ -74,7 +74,7 @@
 }
 
 #upper-screen {
-  color: gray;
+  color: lightgray;
   height: 1em;
   font-size: 1.5rem;
   vertical-align: baseline;
@@ -151,6 +151,13 @@ button:active {
   #calculator {
     width: 70%;
   }
+  #upper-screen {
+    font-size: 1rem;
+  }
+
+  #lower-screen {
+    font-size: 2.75rem;
+  }
 }
 
 @media (max-width: 576px) {
@@ -162,5 +169,13 @@ button:active {
   #key-board,
   button {
     border-radius: 5px;
+  }
+
+  #upper-screen {
+    font-size: 1rem;
+  }
+
+  #lower-screen {
+    font-size: 2.5rem;
   }
 }
